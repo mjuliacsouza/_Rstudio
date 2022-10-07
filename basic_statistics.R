@@ -33,3 +33,4 @@ table(pop_freq)
 #histogram
 hist(state$TaxaHomicidio, freq=FALSE)
 lines(density(state$TaxaHomicidio), lwd=6, col='blue')
+
