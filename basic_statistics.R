@@ -19,6 +19,7 @@ sd(state[['Populacao']])
 IQR(state[['Populacao']])
 ##mad(state[['Populacao']])
 
-# plots
+# percents and boxplot
+quantile(state[['TaxaHomicidio']], p=c(.05,.25,.5,.75,.95))
 boxplot(state[['Populacao']]/1000000, ylab='Populacao (milhao)')
 
