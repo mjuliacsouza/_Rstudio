@@ -1,0 +1,13 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library('e1071')
+```
+
+```{r}
+plot(iris[,1:4])
+```
+ 
