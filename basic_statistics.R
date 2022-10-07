@@ -18,3 +18,7 @@ median(state[['Populacao']])
 sd(state[['Populacao']])
 IQR(state[['Populacao']])
 ##mad(state[['Populacao']])
+
+# plots
+boxplot(state[['Populacao']]/1000000, ylab='Populacao (milhao)')
+
