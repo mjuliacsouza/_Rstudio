@@ -21,7 +21,7 @@ IQR(state[['Populacao']])
 
 # percents and boxplot
 quantile(state[['TaxaHomicidio']], p=c(.05,.25,.5,.75,.95))
-boxplot(state[['Populacao']]/1000000, ylab='Populacao (milhao)', main='Boxplot da populacao')
+boxplot(state[['Populacao']]/1000000, ylab='Populacao (milhao)', main='Boxplot da distribuição da variável População')
 
 # frequency table
 breaks <- seq(from=min(state[['Populacao']]), 
@@ -32,7 +32,7 @@ pop_freq <- cut(state[['Populacao']], breaks=breaks,
 table(pop_freq)
 
 #histogram
-hist(state$TaxaHomicidio, freq=FALSE, main='Histograma da Taxa de Homicidio')
+hist(state$TaxaHomicidio, freq=FALSE, main='Histograma da Taxa de Homicídio')
 lines(density(state$TaxaHomicidio), lwd=6, col='blue')
 
 # teorema central do limite
