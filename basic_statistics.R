@@ -21,7 +21,7 @@ IQR(state[['Populacao']])
 
 # percents and boxplot
 quantile(state[['TaxaHomicidio']], p=c(.05,.25,.5,.75,.95))
-boxplot(state[['Populacao']]/1000000, ylab='Populacao (milhao)')
+boxplot(state[['Populacao']]/1000000, ylab='Populacao (milhao)', main='Boxplot da populacao')
 
 # frequency table
 breaks <- seq(from=min(state[['Populacao']]), 
