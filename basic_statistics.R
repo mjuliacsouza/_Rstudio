@@ -33,7 +33,7 @@ table(pop_freq)
 
 #histogram
 hist(state$TaxaHomicidio, freq=FALSE, main='Histograma da Taxa de Homicídio')
-lines(density(state$TaxaHomicidio), lwd=6, col='blue')
+lines(density(state$TaxaHomicidio), lwd=4, col='blue')
 
 # teorema central do limite
 library(ggplot2)
