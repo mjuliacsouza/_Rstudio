@@ -39,9 +39,9 @@ lines(density(state$TaxaHomicidio), lwd=6, col='blue')
 library(ggplot2)
 head(ChickWeight)
 length(ChickWeight)
-samp_data <- data.frame(income=sample(ChickWeight$weight,20), type='data_dist')
-samp_mean_05 <- data.frame(income=tapply(sample(ChickWeight$weight, 20*5), 
-                                         rep(1:20, rep(5, 20)), FUN=mean), 
+samp_data <- data.frame(income=sample(ChickWeight$weight,100), type='data_dist')
+samp_mean_05 <- data.frame(income=tapply(sample(ChickWeight$weight, 100*5), 
+                                         rep(1:100, rep(5, 100)), FUN=mean), 
                            type='mean_of_5')
 income <- rbind(samp_data, samp_mean_05)
 income$type = factor(income$type, 
