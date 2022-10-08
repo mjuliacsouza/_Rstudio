@@ -34,3 +34,6 @@ table(pop_freq)
 hist(state$TaxaHomicidio, freq=FALSE)
 lines(density(state$TaxaHomicidio), lwd=6, col='blue')
 
+# teorema central do limite
+library('e1071')
+plot(iris$Petal.Width)
