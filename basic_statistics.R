@@ -32,7 +32,7 @@ pop_freq <- cut(state[['Populacao']], breaks=breaks,
 table(pop_freq)
 
 #histogram
-hist(state$TaxaHomicidio, freq=FALSE)
+hist(state$TaxaHomicidio, freq=FALSE, main='Histograma da Taxa de Homicidio')
 lines(density(state$TaxaHomicidio), lwd=6, col='blue')
 
 # teorema central do limite
